@@ -1,7 +1,7 @@
-Genotype_mother,no_mothers,no_pups,mean_het,sd_het,mean_shift,sd_shift
-Parkin:wt/wt,4,122,69.73,6.04,-0.2,0.29
-Bcl2l13:wt/wt,6,152,68.7,6.61,-0.12,0.33
-Parkin:del/del,5,159,69.4,6.57,-0.2,0.34
-Bcl2l13:del/del,9,236,69.19,5.76,-0.01,0.32
-Ulk1:del/del,10,148,69.93,6.16,-0.06,0.31
-Ulk2:del/del,6,142,68.84,7.11,-0.08,0.33
+Genotype_mother,no_mothers,no_pups,mean_het,sd_het,mean_shift,sd_shift,mean_hdiff,sd_hdiff
+Parkin:wt/wt,4,122,69.73,6.04,-0.2,0.29,-4.39,6.18
+Bcl2l13:wt/wt,6,152,68.7,6.61,-0.12,0.33,-2.66,7
+Parkin:del/del,5,159,69.4,6.57,-0.2,0.34,-4.12,7.07
+Bcl2l13:del/del,9,236,69.19,5.76,-0.01,0.32,-0.28,6.94
+Ulk1:del/del,10,148,69.93,6.16,-0.06,0.31,-1.29,6.71
+Ulk2:del/del,6,142,68.84,7.11,-0.08,0.33,-2.02,7.12

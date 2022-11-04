@@ -2,7 +2,7 @@
 ##### Data preprocessing #####
 ##############################
 
-# Last edited: 20/07/22 by LVB
+# Last edited: 04/11/22 by LVB
 
 # Description: Data preprocessing and summary statistics.
 
@@ -53,7 +53,9 @@ tab <- df %>%
     mean_het = (mean(100 * gt_df$Frequency) %>% round(2)),
     sd_het = (sd(100 * gt_df$Frequency) %>% round(2)),
     mean_shift = (mean(gt_df$Shift) %>% round(2)),
-    sd_shift = (sd(gt_df$Shift) %>% round(2)))) %>% 
+    sd_shift = (sd(gt_df$Shift) %>% round(2)),
+    mean_hdiff = (mean(100 * (gt_df$Frequency-gt_df$Het_mothers)) %>% round(2)),
+    sd_hdiff = (sd(100 * (gt_df$Frequency-gt_df$Het_mothers))) %>% round(2))) %>% 
   bind_rows()
 write_csv(tab, "data/parsed/01-table.csv")
 
