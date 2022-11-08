@@ -2,7 +2,7 @@
 ##### Data preprocessing #####
 ##############################
 
-# Last edited: 04/11/22 by LVB
+# Last edited: 08/11/22 by LVB
 
 # Description: Data preprocessing and summary statistics.
 
@@ -14,6 +14,8 @@ source("00-plot-setup.R")
 
 #----- Load data
 mother_df <- read_table("data/raw/tRNAAla_mothers.txt")[, -7] # remove empty column
+NNT_ID_mother <- read_lines("data/raw/NNT_ID_mother.txt")
+mother_df$is_NNT <- mother_df$ID_mother %in% NNT_ID_mother
 
 offspring_df <- read_table("data/raw/tRNAAla_offspring.txt")
 offspring_df <- filter(offspring_df, !is.na(Linear)) # remove empty rows
@@ -24,7 +26,7 @@ df <- merge(offspring_df, mother_df, by = "Dam")
 colnames(df)[c(5, 13)] <- c("DoB", "DoB_mother")
 df <- merge(df, pyroseq_df, by = "Linear")
 
-rm(mother_df, offspring_df, pyroseq_df); gc()
+rm(mother_df, offspring_df, pyroseq_df, NNT_ID_mother); gc()
 
 #----- Process data
 # Heteroplasmy
@@ -67,6 +69,7 @@ mother_h_range
 no_pups <- split(df$Linear, df$ID_mother) %>% sapply(length)
 no_pups <- c("mean" = round(mean(no_pups), 2),
              "sd" = round(sd(no_pups), 2))
+no_pups
 
 #----- Save
 save(df, file = "data/parsed/01-parsed-data.RData")
