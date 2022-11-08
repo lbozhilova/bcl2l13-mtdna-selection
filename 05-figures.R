@@ -2,7 +2,7 @@
 ##### Figure generation #####
 #############################
 
-# Last edited: 31/08/22 by LVB
+# Last edited: 08/11/22 by LVB
 
 # Description: Figure generation.
 
@@ -29,7 +29,7 @@ pup_cts <- split(df$Shift, df$Genotype_mother) %>% lengths
 pup_cts
 gt_labs2 <- c(bquote(italic("Parkin"^"+/+")~"(122 pups)"), bquote(italic("Bcl2l13"^"+/+")~"(152 pups)"),
              bquote(italic("Parkin"^"-/-")~"(159 pups)"), bquote(italic("Bcl2l13"^"-/-")~"(236 pups)"),
-             bquote(italic("Ulk1"^"-/-")~"(148 pups)"), bquote(italic("Ulk2"^"-/-")~"(142 pups)"))
+             bquote(italic("Ulk1"^"-/-")~"(178 pups)"), bquote(italic("Ulk2"^"-/-")~"(142 pups)"))
 gt_lblr2 <- function (variable, value) {
   return(gt_labs2[value])
 }
@@ -88,6 +88,7 @@ plot_save(p, "figures/05-fig3.jpg",  ar = 1.1)
 
 #----- Figure 4
 # 4A P-values from pseudo-controls
+test_df <- filter(test_df, Genotype_mother %in% gt_nms) # exclude the no NNT run, which is for the SI
 a <- ggplot(test_df, aes(x = p_gr, fill = Genotype_mother)) +
   theme_lvb + theme(legend.position = "none",
                     axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
