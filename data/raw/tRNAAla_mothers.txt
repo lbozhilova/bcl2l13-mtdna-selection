@@ -1,43 +1,43 @@
-ID_mother	Dam	Genotype_mother	Het_mothers	Note	DoB			
-1018:47	157543//1018:47//5	Parkin:wt/wt	73	Laura	28-Jul-2019			
-1018:53	157549//1018:53//1	Parkin:del/del	71	Laura	31-Jul-2019			
-1018:56	165653//1018:56//1	Parkin:del/del	59	Laura	19-Aug-2019			
-1018:57	165654//1018:57//2	Parkin:wt/wt	74	Laura	19-Aug-2019			
-1035:28	192658//1035:28//1	Bcl2l13:del/del	66	Laura	24-Oct-2019			
-1035:29	192659//1035:29//2	Bcl2l13:del/del	74	Laura	24-Oct-2019			
-1035:33	192663//1035:33//3	Bcl2l13:del/del	60	Laura	24-Oct-2019			
-1035:38	194623//1035:38//1	Bcl2l13:wt/wt	60	Laura	22-Oct-2019			
-1035:46	200366//1035:46//2	Bcl2l13:del/del	75	Laura	07-Nov-2019			
-1035:48	212806//1035:48//2	Bcl2l13:wt/wt	76	Laura	30-Nov-2019			
-1035:52	212810//1035:52//3	Bcl2l13:wt/wt	76	Laura	30-Nov-2019			
-1035:56	215073//1035:56//1	Bcl2l13:del/del	74	Laura	08-Dec-2019			
-1035:57	215074//1035:57//2	Bcl2l13:del/del	71	Laura	08-Dec-2019			
-1035:58	215075//1035:58//3	Bcl2l13:wt/wt	71	Laura	08-Dec-2019			
-1060:45	268299//1060:45//4	Ulk1:del/del	73	Laura	27-Apr-2020			
-1018:109	187992//1018:109//1	Parkin:del/del	78	Laura	05-Oct-2019			
-1018:130	200427//1018:130//3	Parkin:wt/wt	75	Laura	09-Nov-2019			
-1018:159	203963//1018:159//4	Parkin:wt/wt	75	Laura	20-Nov-2019			
-1018:175	204026//1018:175//4	Parkin:del/del	75	Laura	20-Nov-2019			
-1018:263	216418//1018:263//1	Parkin:del/del	76	Laura	26-Nov-2019			
-1018:64	168151//1018:64//1	Parkin:del/del	63	Laura	25-Aug-2019			
-1018:77	174373//1018:77//3	Parkin:del/del	78	Laura	11-Sep-2019			
-1035:126	232693//1035:126//4	Bcl2l13:del/del	72	Laura	02-Feb-2020			
-1035:71	215088//1035:71//3	Bcl2l13:del/del	70	Laura	27-Nov-2019			
-1035:73	215090//1035:73//5	Bcl2l13:wt/wt	75	Laura	27-Nov-2019			
-1035:85	225431//1035:85//3	Bcl2l13:wt/wt	72	Laura	13-Jan-2020			
-1035:86	225432//1035:86//4	Bcl2l13:del/del	69	Laura	13-Jan-2020			
-1060:126	293425//1060:126//5	Ulk1:del/del	68	Laura	30-Jun-2020			
-1060:133	296398//1060:133//1	Ulk1:del/del	74	Laura	07-Jul-2020			
-1060:93	276612//1060:93//5	Ulk1:del/del	63	Laura	21-May-2020			
-1060:397	487933//1060:397//1	Ulk1:del/del	73	Laura	28-Sep-2021			
-1060:400	495867//1060:400//1	Ulk1:del/del	75	Laura	12-Oct-2021			
-1060:401	495868//1060:401//2	Ulk1:del/del	75	Laura	12-Oct-2021			
-1060:445	534014//1060:445//1	Ulk1:del/del	74	Laura	18-Jan-2022			
-1060:446	534015//1060:446//2	Ulk1:del/del	71	Laura	18-Jan-2022			
-1060:460	544562//1060:460//6	Ulk1:del/del	68	Laura	12-Feb-22			
-1069:116	358273//1069:116//2	Ulk2:del/del	73	Laura	26-Nov-2020			
-1069:118	358275//1069:118//4	Ulk2:del/del	67	Laura	26-Nov-2020			
-1069:124	358287//1069:124//1	Ulk2:del/del	76	Laura	26-Nov-2020			
-1069:80	348337//1069:80//1	Ulk2:del/del	70	Laura	03-Nov-2020			
-1069:81	348338//1069:81//2	Ulk2:del/del	65	Laura	03-Nov-2020			
-1069:507	519757//1069:507//2	Ulk2:del/del	71	Laura	15-Dec-21			
+ID_mother	Dam	Genotype_mother	Het_mothers	Note	DoB	NNT_locus		
+1018:47	157543//1018:47//5	Parkin:wt/wt	73	Laura	28-Jul-2019	wt		
+1018:53	157549//1018:53//1	Parkin:del/del	71	Laura	31-Jul-2019	wt		
+1018:56	165653//1018:56//1	Parkin:del/del	59	Laura	19-Aug-2019	wt		
+1018:57	165654//1018:57//2	Parkin:wt/wt	74	Laura	19-Aug-2019	wt		
+1035:28	192658//1035:28//1	Bcl2l13:del/del	66	Laura	24-Oct-2019	wt		
+1035:29	192659//1035:29//2	Bcl2l13:del/del	74	Laura	24-Oct-2019	wt		
+1035:33	192663//1035:33//3	Bcl2l13:del/del	60	Laura	24-Oct-2019	wt		
+1035:38	194623//1035:38//1	Bcl2l13:wt/wt	60	Laura	22-Oct-2019	wt		
+1035:46	200366//1035:46//2	Bcl2l13:del/del	75	Laura	07-Nov-2019	wt		
+1035:48	212806//1035:48//2	Bcl2l13:wt/wt	76	Laura	30-Nov-2019	wt		
+1035:52	212810//1035:52//3	Bcl2l13:wt/wt	76	Laura	30-Nov-2019	wt		
+1035:56	215073//1035:56//1	Bcl2l13:del/del	74	Laura	08-Dec-2019	wt		
+1035:57	215074//1035:57//2	Bcl2l13:del/del	71	Laura	08-Dec-2019	wt		
+1035:58	215075//1035:58//3	Bcl2l13:wt/wt	71	Laura	08-Dec-2019	wt		
+1060:45	268299//1060:45//4	Ulk1:del/del	73	Laura	27-Apr-2020	wt		
+1018:109	187992//1018:109//1	Parkin:del/del	78	Laura	05-Oct-2019	wt		
+1018:130	200427//1018:130//3	Parkin:wt/wt	75	Laura	09-Nov-2019	wt		
+1018:159	203963//1018:159//4	Parkin:wt/wt	75	Laura	20-Nov-2019	wt		
+1018:175	204026//1018:175//4	Parkin:del/del	75	Laura	20-Nov-2019	wt		
+1018:263	216418//1018:263//1	Parkin:del/del	76	Laura	26-Nov-2019	wt		
+1018:64	168151//1018:64//1	Parkin:del/del	63	Laura	25-Aug-2019	wt		
+1018:77	174373//1018:77//3	Parkin:del/del	78	Laura	11-Sep-2019	wt		
+1035:126	232693//1035:126//4	Bcl2l13:del/del	72	Laura	02-Feb-2020	wt		
+1035:71	215088//1035:71//3	Bcl2l13:del/del	70	Laura	27-Nov-2019	wt		
+1035:73	215090//1035:73//5	Bcl2l13:wt/wt	75	Laura	27-Nov-2019	wt		
+1035:85	225431//1035:85//3	Bcl2l13:wt/wt	72	Laura	13-Jan-2020	wt		
+1035:86	225432//1035:86//4	Bcl2l13:del/del	69	Laura	13-Jan-2020	wt		
+1060:126	293425//1060:126//5	Ulk1:del/del	68	Laura	30-Jun-2020	mut		
+1060:133	296398//1060:133//1	Ulk1:del/del	74	Laura	07-Jul-2020	wt		
+1060:93	276612//1060:93//5	Ulk1:del/del	63	Laura	21-May-2020	wt		
+1060:397	487933//1060:397//1	Ulk1:del/del	73	Laura	28-Sep-2021	mut		
+1060:400	495867//1060:400//1	Ulk1:del/del	75	Laura	12-Oct-2021	mut		
+1060:401	495868//1060:401//2	Ulk1:del/del	75	Laura	12-Oct-2021	mut		
+1060:445	534014//1060:445//1	Ulk1:del/del	74	Laura	18-Jan-2022	wt		
+1060:446	534015//1060:446//2	Ulk1:del/del	71	Laura	18-Jan-2022	wt		
+1060:460	544562//1060:460//6	Ulk1:del/del	68	Laura	12-Feb-22	wt		
+1069:116	358273//1069:116//2	Ulk2:del/del	73	Laura	26-Nov-2020	wt		
+1069:118	358275//1069:118//4	Ulk2:del/del	67	Laura	26-Nov-2020	wt		
+1069:124	358287//1069:124//1	Ulk2:del/del	76	Laura	26-Nov-2020	wt		
+1069:80	348337//1069:80//1	Ulk2:del/del	70	Laura	03-Nov-2020	wt		
+1069:81	348338//1069:81//2	Ulk2:del/del	65	Laura	03-Nov-2020	wt		
+1069:507	519757//1069:507//2	Ulk2:del/del	71	Laura	15-Dec-21	wt		
