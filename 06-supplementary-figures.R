@@ -2,7 +2,7 @@
 ##### Supplementary figures #####
 #################################
 
-# Last edited: 08/11/22 by LVB
+# Last edited: 09/11/22 by LVB
 
 # Description: Figure generation for SI, by reviewer request
 
@@ -61,16 +61,18 @@ plot_save(s2, "figures/06-figs2.jpg", ar = 3/1.1)
 # S3A: NNT vs not NNT: heteroplasmy shift
 nnt_df <- filter(df, Genotype_mother == "Ulk1:del/del") # 178
 nnt_df <- rbind(nnt_df, nnt_df)
-nnt_df$is_NNT <- c(rep("all", 178), c("NNT", "WT")[(1 + nnt_df$is_NNT[1:178])])
-nnt_df$is_NNT <- factor(nnt_df$is_NNT, levels = c("WT", "all", "NNT"))
-test_df <- filter(test_df, !(Genotype_mother %in% gt_nms)) # exclude the no NNT run, which is for the SI
+nnt_df$NNT_locus[1:178] <- "all"
+nnt_df$NNT_locus <- factor(nnt_df$NNT_locus, levels = c("wt", "all", "mut"))
+nnt_labs <- c("wt" = "WT", "all" = "all", "mut" = "NNT")
 
-s3a <- ggplot(nnt_df, aes(x = is_NNT, y = Shift)) +
+test_df <- filter(test_df, !(Genotype_mother %in% gt_nms)) 
+
+s3a <- ggplot(nnt_df, aes(x = NNT_locus, y = Shift)) +
   theme_lvb + theme(legend.position = "none") +
   geom_violin(fill = gt_cols["Ulk1:del/del"]) +
   geom_boxplot(width = .2, fill = gt_cols["Ulk1:del/del"]) +
   geom_hline(yintercept = 0, linetype = "dotted") +
-  scale_x_discrete("") +
+  scale_x_discrete("", labels = nnt_labs) +
   scale_y_continuous("Heteroplasmy\nshift", limits = c(-1.25, 1.25), breaks = seq(-1, 1, .5))
 s3a
 

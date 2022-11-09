@@ -2,7 +2,7 @@
 ##### Distribution analysis #####
 #################################
 
-# Last edited: 08/11/22 by LVB
+# Last edited: 09/11/22 by LVB
 
 # Description: Do autophagy gene knockouts have an effect on mother-to-pup
 # heteroplasmy shift?
@@ -18,7 +18,7 @@ load("data/parsed/01-parsed-data.RData")
 
 #----- Compare Bcl2l13 del/del controls to the remaining groups
 shifts <- split(df$Shift, df$Genotype_mother)
-shifts$Ulk1_noNNT <- filter(df, Genotype_mother == "Ulk1:del/del" & !is_NNT)$Shift
+shifts$Ulk1_noNNT <- filter(df, Genotype_mother == "Ulk1:del/del" & NNT_locus == "wt")$Shift
 
 bcl_pvals <- names(shifts)[-2] %>% 
   sapply(function(gt) ks.test(shifts[["Bcl2l13:wt/wt"]], shifts[[gt]])$p.value) %>% 
