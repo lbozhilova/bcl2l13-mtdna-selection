@@ -28,7 +28,7 @@ Scripts should principally be run in numerical order from the parent directory. 
 
 `04-sample-sizes.R` contains the resampling analysis showing the _Bcl2l13_ knockout effect is reliably observed at lower sample sizes.
 
-`05-figures.R` can be used to replicate Figures 2-4 in the paper.
+`05-figures.R` and `06-supplementary-figures.R` can be used to replicate Figures 2-4 in the main text and Figures S1-S3 in the supplementary materials respectively.
 
 ## References
 
