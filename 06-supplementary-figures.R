@@ -2,7 +2,7 @@
 ##### Supplementary figures #####
 #################################
 
-# Last edited: 09/11/22 by LVB
+# Last edited: 29/11/22 by LVB
 
 # Description: Figure generation for SI, by reviewer request
 
@@ -35,6 +35,7 @@ s1 <- ggplot(df, aes(x = ID_mother, y = Shift, fill = Genotype_mother)) +
   scale_colour_manual(values = gt_cols)
 s1
 plot_save(s1, "figures/06-figs1.jpg", ar = 3/2)
+plot_save(s1, "figures/06-figs1.pdf", ar = 3/2, dev = "pdf")
 
 #----- Figure S2: Normalised variance
 vartab <- df %>% 
@@ -56,6 +57,7 @@ s2 <- ggplot(vartab, aes(x = Genotype_mother, y = norm_var, colour = Genotype_mo
   scale_colour_manual(values = gt_cols)
 s2
 plot_save(s2, "figures/06-figs2.jpg", ar = 3/1.1)
+plot_save(s2, "figures/06-figs2.pdf", ar = 3/1.1, dev = "pdf")
 
 #----- Figure S3: NNT mutation difference
 # S3A: NNT vs not NNT: heteroplasmy shift
@@ -89,3 +91,4 @@ s3 <- plot_arrange(s3a, s3b)
 s3
 
 plot_save(s3, "figures/06-figs3.jpg", ar = 2)
+plot_save(s3, "figures/06-figs3.pdf", ar = 2, dev = "pdf")

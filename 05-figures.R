@@ -2,7 +2,7 @@
 ##### Figure generation #####
 #############################
 
-# Last edited: 08/11/22 by LVB
+# Last edited: 29/11/22 by LVB
 
 # Description: Figure generation.
 
@@ -46,6 +46,7 @@ p <- ggplot(filter(df, is_ko), aes(x = 100 * Het_mothers, y = 100 * Frequency, c
   scale_colour_manual(values = gt_cols)
 p
 plot_save(p, "figures/05-fig2.jpg", ar = 4/3, size = 1)
+plot_save(p, "figures/05-fig2.pdf", ar = 4/3, size = 1, dev = "pdf")
 
 #----- Figure 3
 # 3A Beeswarms of mother heteroplasmy 
@@ -85,6 +86,7 @@ c
 p <- plot_arrange(a, b, c, ncol = 1)
 p
 plot_save(p, "figures/05-fig3.jpg",  ar = 1.1)
+plot_save(p, "figures/05-fig3.pdf",  ar = 1.1, dev = "pdf")
 
 #----- Figure 4
 # 4A P-values from pseudo-controls
@@ -112,3 +114,4 @@ b
 p <- plot_arrange(a, b, ncol = 2)
 p
 plot_save(p, file = "figures/05-fig4.jpg", ar = 2)
+plot_save(p, file = "figures/05-fig4.pdf", ar = 2, dev = "pdf")

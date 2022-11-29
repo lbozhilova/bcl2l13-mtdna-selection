@@ -2,7 +2,7 @@
 ##### Plot setup #####
 ######################
 
-# Last edited: 25/08/22 by LVB
+# Last edited: 29/11/22 by LVB
 
 # Description: Theme, custom colours and labels, and plot saving functions for
 # generating the figures in the paper.
@@ -71,6 +71,8 @@ plot_save <- function(p, filename, size = 1, ar = 1, dev = "jpeg"){
     filename <- paste0(filename, ".", dev)
   if (dev == "jpeg" & !str_detect(filename, "\\.jpg|\\.jpeg"))
     filename <- paste0(filename, ".jpg")
+  if (dev == "pdf")
+    dev <- cairo_pdf
   w <- round(180 * size)
   h <- w/ar
   ggsave(filename = filename,
@@ -78,5 +80,6 @@ plot_save <- function(p, filename, size = 1, ar = 1, dev = "jpeg"){
          width = w,
          height = h,
          units = "mm",
+         dpi = 320,
          device = dev)
 }
