@@ -1,6 +1,6 @@
 # A role for BCL2L13 and autophagy in germline purifying selection of mtDNA
 
-This repository contains all scripts necessary to reproduce the data analysis and figures presented in [Kremer _et al._ (2022)](https://www.biorxiv.org/content/10.1101/2022.09.02.506367v1).
+This repository contains all scripts necessary to reproduce the data analysis and figures presented in [Kremer _et al._ (2022)](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010573).
 
 ## Software requirements
 
@@ -36,4 +36,4 @@ If you use any of the code, methods or data presented here, please cite us:
 
 L. S. Kremer<sup>\*</sup>, L. V. Bozhilova<sup>\*</sup>, D. Rubalcava-Gracia, R. Filograna, M. Upadhyay,
 C. Koolmeister, P. F. Chinnery, and N.-G. Larsson, “A role for BCL2L13 and autophagy in
-germline purifying selection of mtDNA,” bioRxiv, 2022. doi: https://doi.org/10.1101/2022.09.02.506367
+germline purifying selection of mtDNA,” PLoS Genetics 19.1 (2023): e1010573.
